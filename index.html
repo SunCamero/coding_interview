@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * Crea dos variables llamadas "num1" y "num2" y asígnales
+       *  cualquier número. Calcula la suma de estos dos números y
+       *  guárdalo en una variable llamada "resultado". Imprime en la consola "El resultado de la suma es [resultado]".
+       */
+      var num1 = 3;
+      var num2 = 4;
+
+      var resultado = num1 + num2;
+      console.log("El resultado de la suma es :", resultado);
+
+      /**
+          *Crea una variable llamada "edad" y asígnale tu edad. 
+          Usando una estructura condicional, imprime en la consola "Eres mayor de edad" 
+          si tu edad es igual o mayor a 18 años, o "Eres menor de edad" en caso contrario.
+          * */
+      var edad = 30;
+
+      if (edad >= 18) {
+        console.log("Eres mayor de edad");
+      } else {
+        console.log("Eres menor de edad");
+      }
+
+      /**
+       * Crea una función llamada "calculadora"
+       * que tome dos números como argumentos y retorne la suma de estos números.
+       *  Llama a esta función con dos números cualquiera y guárdalo en una variable llamada "resultado".
+       * Imprime en la consola "El resultado es [resultado]".
+       * */
+      var resultado = this.calculadora(2,3);
+      console.log("El resultado es ",resultado);
+      function calculadora(p1, p2) {
+        return p1 + p2;
+      }
+
+      /**
+       * Crear un programa que pida al usuario su nombre y lo muestre en una alerta.
+       * */
+
+       var  person = prompt("Please enter your name", "");
+       alert("Hola "+person);
+
+       /*
+       Crear un programa que determine si un número dado es par o impar
+       */
+       var  num = prompt("Ingresa un numero");
+       if(num % 2 == 0) {
+        alert(" el  número "+num+" es par ");
+        }else{
+            alert(" el  número "+num+" es impar ");
+        }
+
+        /*
+        Crear un programa que calcule el índice de masa corporal (IMC) de una persona dada su altura y peso.
+        
+        */
+        var  height = prompt("Ingresa un altura");
+        var  weight = prompt("Ingresa tu peso ");
+
+        var IMC = weight/(height * height);
+
+        alert(" Tu IMC  ES  "+IMC);
+     
+
+    </script>
+  </body>
+</html>
